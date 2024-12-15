@@ -1,0 +1,37 @@
+services:
+  postgres:
+    container_name: vps_doc_postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: vps
+      POSTGRES_USER: vps_doc_postgres
+      POSTGRES_PASSWORD: vps_doc_postgres
+    volumes:
+      - vps_doc_postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - vps_doc_network
+    restart: 'no'
+
+  redis:
+    image: redis/redis-stack:latest
+    container_name: vps_doc_redis_stack
+    ports:
+      - 6379:6379
+      - 8001:8001
+    volumes:
+      - vps_doc_redis_stack_data:/data
+    networks:
+      - vps_doc_network
+    restart: 'no'
+
+networks:
+  vps_doc_network:
+    driver: bridge
+
+volumes:
+  vps_doc_postgres_data:
+    driver: local
+  vps_doc_redis_stack_data:
+    driver: local

@@ -47,7 +47,7 @@ A Node.js library for managing and processing job queues with Redis, designed fo
 Check out the video demo of the project to see how it works in action:
 
 <video width="900" controls>
-  <source src="./videos/Screencast from 2024-12-15 15-28-52.webm" type="video/mp4">
+  <source src="./videos/Screencast from 2024-12-15 15-28-52.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 

@@ -94,7 +94,7 @@ A Node.js library for managing and processing job queues with Redis, designed fo
 
 Check out the video demo of the project to see how it works in action:
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/sHlvIAgEjBo" frameborder="0" allowfullscreen></iframe>
+[![Watch the demo on YouTube](https://img.youtube.com/vi/sHlvIAgEjBo/0.jpg)](https://www.youtube.com/watch?v=sHlvIAgEjBo)
 
 In this video, you can see the entire process of creating and connecting to a VPS using our service.
 
